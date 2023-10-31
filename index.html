@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Omar Flores Estrada</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="pages/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="pages/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Function to set the same height for all carousel cards
+      function setEqualCardHeight() {
+  const cards = document.querySelectorAll(".cardBody");
+  let maxHeight = 0;
+
+  cards.forEach(card => {
+    card.style.height = "auto"; // Reset height for responsiveness
+    const cardHeight = card.offsetHeight; // Use offsetHeight instead of clientHeight
+    if (cardHeight > maxHeight) {
+      maxHeight = cardHeight;
+    }
+  });
+
+  cards.forEach(card => {
+    card.style.height = `${maxHeight}px`;
+  });
+}
+
+// Event listener to run the function on load and window resize
+document.addEventListener("DOMContentLoaded", setEqualCardHeight);
+window.addEventListener("resize", setEqualCardHeight);
+    </script>
+    
+
+</head>
+
+<body>
+
+<!-- ---------------------- Sticky Nav Bar at the Top ---------------------- -->
+
+<header class="sticky-top">
+  <div class="opacity">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">[Omar]</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+    
+                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="pages/about.html">About</a>
+                  <a class="nav-link" href="pages/projects.html">Projects</a>
+    
+                </div>
+              </div>
+            </div>
+        </nav>
+      </div>
+</header>
+
+<!-- ----------------------------- Hero Image ------------------------------ -->
+
+    <div class="styledbg">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-11 col-lg-9 col-xl-7 col-xxl-6 text-center text-white">
+            <p class="display-6 mb-3">
+              Hi, my name is 
+              <br>
+              <div class="underlineBox">
+                <h2 class=" display-3 fw-bold">Omar Flores Estrada</h2>
+              </div>
+            </p>
+            <br>
+            <h4 class="flex-lg-row-reverse mb-5">Ardent Programming Enthusiast & Aspiring Information Security Professional</h4>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              
+                <a href="https://github.com/OmarFloresE">
+                <button type="button" class="btn bsb-btn-3xl btn-light gap-8"> Github </button>
+                </a>
+              
+                <a href="https://www.linkedin.com/in/omar-flores-e/" style="clear: none;">
+                <button type="button" class="btn bsb-btn-3xl btn-outline-light"> LinkedIn </button>
+                </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- Profile picture and written intro -->
+
+<div class="container-fluid">
+      <div class="text-center">
+        <div class="row justify-content-center">
+          <div class="col-xxl-4">
+            <img src="assets/omarR.jpg" class="card-img profile" alt="Omar">
+          </div>
+          <div class="col-xxl-7 homebio">
+            <br>
+            <h1 class="bioTitle">Thanks For Stopping By!</h1>
+            <br>
+            <h3> 
+              Welcome to my online home, your virtual visit is greatly appreciated!
+              <br>
+              <br> 
+              I am Omar and this is more than just a static resume website; it's a dynamic project 
+              that is in a perpetual state of growth and improvement, much like myself. <br><br>
+              Here, you'll be able to see the ongoing journey of my skills and aspirations in 
+              real time. This website is like a canvas for my own personal study and development where I will declare my goals and you can see my progress in motion. 
+              Most importantly, it's a testament to my unwavering commitment to learning and gaining experience within the realms of programming and information security.
+            </h3>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+    <br>
+    <br>
+    <br>
+    
+  <!-- Written testimonials imported from LinkedIn -->
+
+<div class="container divider">
+  <br>
+    <div class="justify-content-center text-center">
+      <h1 class="display-3 fw-bold mb-3" id="testimonials">Testimonials</h1>
+    </div>
+</div>
+
+    <br>
+    <br>
+
+<div class="container-xl testimonials">
+  <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-inner justify-content-center">
+
+          <!-- ----------------------------- soojin card ----------------------------- -->
+            <div class="carousel-item active align-content-center">
+                <div class="card mb-3 text-center justify-content-center cardBody" >
+                    <div class="container-md justify-content-center">
+                      <img src="assets/soojinL.png" class="cardHead" alt="Endorser 2">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"> 
+                          <a href="https://www.linkedin.com/in/soojinl/">
+                            <span class="glowText">Soojin Lee</span>
+                          </a> 
+                        </h3>
+                        <h6 class="card-text"> Microsoft <br> Web Support Manager</h6>
+                        <p class="card-text">
+                          "I had the pleasure of managing Omar during his tenure as a digital sales and 
+                          support associate at Microsoft. Omar has shown himself to be a reliable and proactive team 
+                          player who consistently demonstrated a high level of initiative and took ownership of their responsibilities. 
+                          His positive attitude and willingness to help others made him a valuable asset to our team. 
+                          Omar took ownership to seek out opportunities for growth and development and he actively embraced new 
+                          technologies and tools which effectively made him a valuable asset in our fast-paced and ever-evolving industry.
+                          I am confident he will continue to excel and positively impact any organization he joins."
+                        </p>
+                    </div>
+                </div>
+              </div>
+
+<!-- ----------------------------- Abtin Card ------------------------------ -->
+              <div class="carousel-item align-content-center">
+                <div class="card mb-3 text-center justify-content-center cardBody" >
+                    <div class="container-md justify-content-center">
+                      <img src="assets/Abtin.jpg" class="cardHead" alt="Endorser 2">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"> 
+                          <a href="https://www.linkedin.com/in/abtin-rahmatpanah-ab3354214/">
+                            <span class="glowText">Abtin Rahmatpanah</span>
+                          </a> 
+                        </h3>
+                        <h6 class="card-text"> De Anza College <br>Premed</h6>
+                        <p class="card-text">
+                          "Omar Flores Estrada is an exceptional candidate when it comes to challenges, communication, teamwork, and much more. In my one year of getting to know him, 
+                          he has effectively demonstrated his ability to provide technological information to tech industry consumers, as well as provide technical support to those 
+                          who were not as literate in the field. He is a fantastic mentor, a refreshing coworker, and a dear friend of mine. He never runs away from adversity, 
+                          but he embraces it wholly. He is well spoken and communicates productively in team settings. He prioritises the task, and he’s not afraid to lead the way. 
+                          I highly recommend him on his endeavour in the tech field because I’ve seen him give more than just his best."
+                        </p>
+                    </div>
+                </div>
+              </div>
+
+<!-- --------------------------- John Payes Card --------------------------- -->
+              <div class="carousel-item align-content-center">
+                <div class="card mb-3 text-center justify-content-center cardBody" >
+                    <div class="container-md justify-content-center">
+                      <img src="assets/johnPayes.jpeg" class="cardHead" alt="Endorser">
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title"> 
+                        <a href="https://www.linkedin.com/in/john-payes-0a2149142/">
+                          <span class="glowText">John Payes</span>
+                        </a> 
+                      </h3>
+                        <h6 class="card-text"> Microsoft <br> Director, Silicon Valley Customer Experience Center Microsoft / Board Member 5th Avenue Theater</h6>
+                        <p class="card-text">"I want to provide my personal recommendation and endorsement for Omar whom I had the pleasure of working with at Microsoft and collaborating with on several customer executive briefings at our Microsoft Experience Center 
+                          in Silicon Valey. Omar truly embodies Customer Obsession and gave his 110% to every single Customer visit by supporting our technical demonstrations on Hybrid work and showcasing how our technology solutions can make hybrid work better for employees. 
+                          Omar would be a tremendous asset to any organization looking for someone who knows Enterprise Customers and can deliver and articulate technical solutions in a way that can be understood by everyone. 
+                          I have nothing but superlatives to offer Omar and his work ethic."</p>
+                    </div>
+                </div>
+              </div>
+
+<!-- ---------------------------- Cocoa Card  ---------------------------- -->
+
+              <div class="carousel-item align-content-center">
+                <div class="card mb-3 text-center justify-content-center cardBody" >
+                    <div class="container-md justify-content-center">
+                      <img src="assets/cocoaC.jpeg" class="cardHead" alt="Endorser 2">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"> 
+                          <a href="https://www.linkedin.com/in/cocoa-carbone/">
+                            <span class="glowText">Cocoa Carbone</span>
+                          </a>
+                        </h3>
+                        <h6 class="card-text"> Microsoft <br> Project Manager | Business Operations </h6>
+                        <p class="card-text">
+                          "I was one of Omar's direct managers at Microsoft and I highly recommend him for his great work and dedication. 
+
+                          Omar has a talent for taking on complex tasks and delivering results that exceed expectations. He is always willing to go the extra mile to ensure that projects are completed on time and with high quality. His attention to detail and problem-solving skills led to several successful initiatives within the team. 
+                          
+                          He consistently contributed to the success of our team and work collaboratively with colleagues to achieve common goals. His positive attitude and creativity have made a significant impact on our organization. He thinks outside of the box and is able to work through ambiguity and challenges. 
+                          
+                          Overall, he was a joy to work with and I recommend him for any position or project that he may be considered for. Omar would be a valuable asset to any team and would be an exceptional addition to any organization."
+                        </p>
+                    </div>
+                </div>
+              </div>
+
+<!-- ----------------------------- Trudi Card ------------------------------ -->
+
+              <div class="carousel-item align-content-center">
+                <div class="card mb-3 text-center justify-content-center cardBody" >
+                    <div class="container-md justify-content-center">
+                      <img src="assets/Trudi.jpeg" class="cardHead" alt="Endorser 2">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title"> 
+                          <a href="https://www.linkedin.com/in/trudi-mixon/">
+                          <span class="glowText">Trudi Mixon</span>
+                          </a>
+                        </h3>
+                        <h6 class="card-text"> Microsoft <br> Director, Web Sales & Support Enablement </h6>
+                        <p class="card-text">
+                          "I was thrilled to have Omar as part of my Phygital Front Door pilot team from the Microsoft Silicon Valley location. 
+                          This pilot objective was to reimagine how a frontline worker engages with customers with-in a brick-and -mortar and digital stores. 
+                          Omar brought his expertise, product knowledge, leadership, and growth mindset to the pilot. He was willing to get uncomfortable and learn new things to expand his skill set. 
+                          In addition, he shared feedback and encouraged team members to do the same. I look forward to seeing Omar's growth in his career and leadership."
+                        </p>
+                    </div>
+                </div>
+              </div>
+
+<!-- ----------------------------- Ronald Card ------------------------------ -->
+
+<div class="carousel-item align-content-center">
+  <div class="card mb-3 text-center justify-content-center cardBody" >
+      <div class="container-md justify-content-center">
+        <img src="assets/Ronald.jpeg" class="cardHead" alt="Endorser">
+      </div>
+      <div class="card-body">
+          <h3 class="card-title"> 
+            <a href="https://www.linkedin.com/in/ronald-snyder/">
+            <span class="glowText">Ronald Snyder</span>
+            </a>
+          </h3>
+          <h6 class="card-text"> Tesla <br> AI & Robotics Data Collection</h6>
+          <p class="card-text">
+            "Omar has been a pivotal step in my growth with Microsoft. He's always helpful and approaches situation's with a 
+            consistent sense of urgency. 
+            Working with him has been nothing short of a treat. His skill set, personality, 
+            and work ethic will take him far. Anyone who ends up working with him should share this same experience."
+          </p>
+      </div>
+  </div>
+</div>
+
+  
+      </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+  <!-- Creator Footer & Connect  -->
+  
+<footer class="text-center text-lg-start" style="background-color: #00000000;">
+      <div class="container d-flex justify-content-center py-5">
+      <a href= "https://github.com/OmarFloresE">
+        <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 footerButtons">
+            <i class="bi bi-github"> </i>
+        </button>
+      </a>
+
+        <a href="https://www.linkedin.com/in/omar-flores-e/">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 footerButtons">
+            <i class="bi bi-linkedin"></i>
+          </button>
+        </a>
+
+
+        <a href= "https://www.youtube.com/channel/UCTsMmyII7EhLFm4nJbe3LjQ">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 footerButtons">
+              <i class="bi bi-youtube"></i>
+          </button>
+        </a>
+
+
+      </div>
+  
+      <!-- Calling Card -->
+      <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.709);">
+        v 0.9 Developed with 💖 by
+        <a class="text-white" href="https://mdbootstrap.com/">
+          <span class="glowText">OmarFloresE</span>
+        </a>
+      </div>
+    </footer>
+
+</body>
+
+
+</html>
