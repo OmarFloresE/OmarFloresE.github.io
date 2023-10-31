@@ -12021,14 +12021,14 @@ body {
 }
 
 .styledbg {
-  background-image: linear-gradient(180deg, rgba(3, 17, 81, 0.819), rgba(30, 44, 96, 0.139)), url("../assets/homebg.jpg");
+  background-image: linear-gradient(180deg, rgba(3, 17, 81, 0.819), rgba(30, 44, 96, 0.139)), url("assets/Homebg.jpg");
   height: 1010px;
   background-size: cover;
   padding-top: 300px;
 }
 
 .aboutbg {
-  background-image: linear-gradient(180deg, rgba(3, 17, 81, 0.819), rgba(30, 44, 96, 0.139)), url("../assets/about.jpg");
+  background-image: linear-gradient(180deg, rgba(3, 17, 81, 0.819), rgba(30, 44, 96, 0.139)), url("assets/About.jpg");
   height: 950px;
   background-size: cover;
   padding-top: 300px;
@@ -12150,7 +12150,7 @@ a {
 
 .cardBody {
   background-color: rgba(18, 115, 176, 0.471);
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 65px;
   height: 100%;
   padding-left: 50px;
