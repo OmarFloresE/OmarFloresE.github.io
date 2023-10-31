@@ -12015,6 +12015,7 @@ body {
   background-repeat: no-repeat;
   height: 100%;
   margin: 0;
+  padding: 0;
   background-attachment: fixed;
   overflow-x: hidden;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -12044,23 +12045,30 @@ body {
 
 .homebio {
   color: whitesmoke;
-  padding: 100px;
-  padding-top: 70px;
+  padding: 40px;
+  padding-top: 40px;
 }
 
 .profile {
   position: relative;
-  max-width: 650px;
-  max-height: 600;
-  min-width: 500px;
-  min-height: 450;
+  max-width: 550px;
+  max-height: auto;
+  min-width: 100px;
+  min-height: 50;
   padding-top: 40px;
-  padding-left: 10px;
+  padding: 15px;
 }
 
+@media (max-width: 768px) {
+  .profile {
+    max-width: auto;
+    max-height: auto;
+  }
+}
 .cardHead {
   max-width: 150px;
   max-height: 150px;
+  margin-top: 25px;
   border-radius: 100%;
 }
 
@@ -12093,9 +12101,8 @@ body {
 }
 
 .bioTitle {
-  font-size: 60px;
+  font-size: 45px;
   font-weight: bold;
-  padding: 20px;
   position: relative;
 }
 
@@ -12153,14 +12160,16 @@ a {
   padding-top: 45px;
   padding-bottom: 65px;
   height: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
   color: whitesmoke;
 }
 
 #testimonials {
-  font-size: 4em;
   color: white;
+  font-size: 45px;
+  font-weight: bold;
+  position: relative;
 }
 
 .navbar {
@@ -12206,14 +12215,14 @@ a {
 
 .about-content {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   border-right-style: solid;
   border-width: 0.1em;
   border-color: rgba(255, 255, 255, 0.399);
 }
 
 .about-content h1, .about-content .h1 {
-  font-size: 45px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: white;
   text-align: center;
@@ -12225,17 +12234,17 @@ a {
 }
 
 .about-content p {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .about-image {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
 }
 
 .about-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 550px;
   height: auto;
 }
 
@@ -12258,14 +12267,14 @@ a {
 
 .about-content2 {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
   border-left-style: solid;
   border-width: 0.1em;
   border-color: rgba(255, 255, 255, 0.399);
 }
 
 .about-content2 h1, .about-content2 .h1 {
-  font-size: 45px;
+  font-size: 40px;
   margin-bottom: 20px;
   color: white;
   text-align: center;
@@ -12277,12 +12286,12 @@ a {
 }
 
 .about-content2 p {
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .about-image2 {
   flex: 1;
-  padding: 20px;
+  padding: 15px;
 }
 
 .about-image2 img {
@@ -12303,6 +12312,32 @@ a {
     order: 1; /* Adjust the order to place the image on top */
   }
 }
+/* ------------------------ About Aspiration Section ------------------------ */
+.about-aspiration {
+  flex: 1;
+  padding: 15px;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 0.1em;
+  border-color: rgba(255, 255, 255, 0.399);
+}
+
+.about-aspiration h1, .about-aspiration .h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: white;
+  text-align: center;
+}
+
+.about-aspiration h2, .about-aspiration .h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.about-aspiration p {
+  font-size: 22px;
+}
+
 /* --------------------------- About Certification -------------------------- */
 .divider {
   border-top-style: solid;
@@ -12410,6 +12445,24 @@ a {
     right: 0;
   }
 }
+/* -------------------------------- Cert Icon ------------------------------- */
+.certIcon {
+  max-width: 180px;
+  max-height: 180px;
+  transition: 1s box-shadow;
+  border-style: round;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.certIcon:hover {
+  transition: 0s box-shadow;
+  background: rgba(90, 75, 255, 0.557);
+  box-shadow: 0 5px 35px 0px rgba(90, 75, 255, 0.835);
+  animation: 1s counterclockwise infinite;
+}
+
 /* ----------------------------- Projects Pcards ----------------------------- */
 .Pcard {
   font-weight: bold;
